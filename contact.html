@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Examen</title>
+</head>
+<body>
+    <header>
+        <!--debut du header avec la navigation et le titre-->
+        <nav class="navigation-header">
+            <ul>
+                <li><a href="index.html" title="accueil">Accueil</a></li>
+                <li><a href="galerie.html" title="galerie photo">Galerie photo</a></li>
+                <li><a href="a-propos.html" title="a propos">À propos</a></li>
+                <li><a href="contact.html" title="nous contacter">Nous contacter</a></li>
+            </ul>
+        </nav>
+        <h1>Contact</h1>
+    </header>
+    <main>
+        <!--debut du form-->
+        <section class="form">
+            <h2>Formulaire de contact</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <!--Nom et Prenom-->
+                <div class="nom">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Zinck" required>
+                </div>
+                <div class="prenom">
+                    <label for="prenom">Votre prenom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Nicolas" required>
+                </div>
+                <!--email et tel-->
+                <div class="email">
+                    <label for="email">Votre E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="azerty@azerty.fr" pattern="[a-zA-Z0-9]+@[a-z]+.[a-z]{2}" required>
+                </div>
+                <div class="tel">
+                    <label for="tel">Votre téléphone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="06-06-06-06-06" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2,3}" required>
+                </div>
+                <!--sujet de la demande avec select optgroup et  texarea-->
+                <div class="sujet">
+                    <fieldset>
+                        <legend>Votre demande</legend>
+                        <label for="secteur">Le secteur</label>
+                        <select name="seceteur" id="secteur">
+                            <optgroup label="maintenance">
+                                <option value="je">je</option>
+                                <option value="sais">sais</option>
+                                <option value="pas">pas</option>
+                                <option value="quoi">quoi</option>
+                                <option value="mettre">mettre</option>
+                            </optgroup>
+                            <optgroup label="toujours pas">
+                                <option value="ici">ici</option>
+                                <option value="non">non</option>
+                                <option value="plus">plus</option>
+                                <option value="mais">mais ta vue les beaux groupe !</option>
+                            </optgroup>
+                        </select>
+                      
+                    <div class="demande">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" placeholder="Decriver votre demande ici😘" ></textarea>
+                    </div>
+                    </fieldset>
+                </div>
+                <button class="button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!--footer avec la balise address et la navigation-->
+        <address class="copyright">
+            <p>E-mail et tel :</p>
+            <a href="lemail@exemple.fr">lemail@exemple.fr</a>
+            <a href="tel:+336-06-06-06-06">+336-06-06-06-06</a>
+        </address>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html" title="accueil">Accueil</a></li>
+                    <li><a href="galerie.html" title="galerie photo">Galerie photo</a></li>
+                    <li><a href="a-propos.html" title="a propos">À propos</a></li>
+                    <li><a href="contact.html" title="nous contacter">Nous contacter</a></li>
+                </ul>
+            </nav>
+            <p>Mention legales</p>
+    </footer>
+</body>
+</html>
