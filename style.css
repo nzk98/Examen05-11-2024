@@ -195,6 +195,10 @@ address{
 .imgmimiche{
     width:30%;
 }
+/*padding sur le coté gauche*/
+.main-grid{
+    padding-left: 5%;;
+}
 /*ajustement de la largeur de la video*/
 video{
     width:50%;
